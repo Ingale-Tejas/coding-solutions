@@ -35,26 +35,24 @@ Output: ["h","a","n","n","a","H"]
 
 ## Solution
 
-**Language:** Java  
+**Language:** C  
 **Runtime:** 0 ms (beats 100.00%)  
-**Memory:** 48.5 MB (beats 21.85%)  
-**Submitted:** 2026-07-31T05:33:59.141Z  
+**Memory:** 17.9 MB (beats 47.67%)  
+**Submitted:** 2026-07-31T05:39:26.300Z  
 
-```java
-class Solution {
-    public void reverseString(char[] s) {
-        int start = 0;
-        int end = s.length -1;
+```c
+void reverseString(char* s, int sSize) {
+    int start = 0;
+    int end = sSize - 1;
 
-        //swapping logic
-        while (start < end) {
+    //swap
+    while(start <= end) {
         char temp = s[start];
         s[start] = s[end];
         s[end] = temp;
 
         start = start + 1;
         end = end -1;
-        }
     }
 }
 ```
