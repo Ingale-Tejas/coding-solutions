@@ -16,6 +16,5 @@ class Solution {
                     res++;
             }
             return res;
-
     }
 }
