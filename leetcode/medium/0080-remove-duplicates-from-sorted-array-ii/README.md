@@ -65,25 +65,25 @@ It does not matter what you leave beyond the returned k (hence they are undersco
 
 **Language:** Java  
 **Runtime:** 0 ms (beats 100.00%)  
-**Memory:** 48.7 MB (beats 51.49%)  
-**Submitted:** 2026-08-11T13:36:28.494Z  
+**Memory:** 48.9 MB (beats 32.63%)  
+**Submitted:** 2026-08-11T13:40:57.450Z  
 
 ```java
 class Solution {
     public int removeDuplicates(int[] nums) {
 
-     int officer=2;
+     int officer=1;
     int cm = 2;
     int res =2;
     int n = nums.length;
 
         while(cm < n) {
             
-            if(nums[cm] == nums[officer-2]){
+            if(nums[cm] == nums[officer-1]){
                 cm++;
                 continue;
             }
-            nums[officer] = nums[cm];
+            nums[officer + 1] = nums[cm];
             officer++;
             res++;
             cm++;
